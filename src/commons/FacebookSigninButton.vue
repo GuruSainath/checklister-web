@@ -32,7 +32,6 @@ export default{
       }, {scope: 'public_profile,email,user_friends'})
     },
     facebookLogin: function() {
-      var vm = this;
       window.FB.api(
         '/me',
         'GET',
@@ -46,6 +45,7 @@ export default{
               id: FBResponse.id,
             }
           }
+          console.log(postData);
         //   vm.$store.dispatch('socialAuth', postData)
           this.loginDisableToggle = false
         }

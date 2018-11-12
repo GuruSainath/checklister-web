@@ -3,12 +3,23 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/sigin">Sigin</router-link>
+      <router-link to="/signin">Sigin</router-link>
     </div>
     <router-view/>
   </div>
 </template>
-
+<script>
+export default {
+  name: 'app',
+  data() {
+    return {
+      
+    }
+  },
+  mounted () {
+  }
+}
+</script>
 <style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -27,4 +38,6 @@
     }
   }
 }
+@import './assets/styles/_buttons.scss';
+
 </style>

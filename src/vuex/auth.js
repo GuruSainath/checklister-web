@@ -14,7 +14,7 @@ export default {
   },
   actions: {
     socialAuth: function (context, postData) {
-      return axios.post('http://localhost:8000/rest-auth/facebook/', postData)
+      return axios.post('', postData)
         .then(function (response) {
           Cookie.set('user_details', response.data);
           context.commit('USER_LOGIN_MUTATION', true);

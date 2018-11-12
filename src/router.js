@@ -22,10 +22,7 @@ export default new Router({
     {
       path: '/signin',
       name: 'signin',
-      component: () => import('./views/SignIn.vue'),
-      meta: {
-        requiresAuth: false
-      }
+      component: () => import('./views/SignIn.vue')
     },
   ]
 })
