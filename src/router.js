@@ -34,5 +34,10 @@ export default new Router({
       name: 'Put',
       component: () => import('./views/Put.vue')
     },
+    {
+      path: '/user-list',
+      name: 'UserList',
+      component: () => import('./views/userList.vue')
+    },
   ]
 })

@@ -6,6 +6,7 @@
       <router-link to="/signin">Sigin</router-link> |
       <router-link to="/post">post</router-link> |
       <router-link to="/put">put and get </router-link> |
+      <router-link to="/user-list">user list </router-link> 
     </div>
     <router-view/>
   </div>
