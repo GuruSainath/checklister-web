@@ -24,5 +24,20 @@ export default new Router({
       name: 'signin',
       component: () => import('./views/SignIn.vue')
     },
+    {
+      path: '/post',
+      name: 'Post',
+      component: () => import('./views/Post.vue')
+    },
+    {
+      path: '/put',
+      name: 'Put',
+      component: () => import('./views/Put.vue')
+    },
+    {
+      path: '/get',
+      name: 'Get',
+      component: () => import('./views/Get.vue')
+    },
   ]
 })
