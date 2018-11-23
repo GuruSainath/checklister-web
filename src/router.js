@@ -34,10 +34,5 @@ export default new Router({
       name: 'Put',
       component: () => import('./views/Put.vue')
     },
-    {
-      path: '/get',
-      name: 'Get',
-      component: () => import('./views/Get.vue')
-    },
   ]
 })

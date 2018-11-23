@@ -71,7 +71,7 @@
 		},
 		methods: {
 			submitForm: function() {
-				if(!this.name || !this.description || !this.description_html || !this.details.address || !this.details.gender || !this.details.mobile || !this.is_complete) {
+				if(!this.name || !this.description || !this.description_html || !this.details.address || !this.details.gender || !this.details.mobile) {
 					alert('please fill all the fields')
 				} else {
 					var postData = {
@@ -83,10 +83,11 @@
 							gender: this.details.gender,
 							mobile: this.details.mobile
 						},
-						is_complete: this.is_complete
+						is_complete: this.is_complete,
+						user: 1
 					}
 					console.log(postData)
-					axios.post('https://checklister-api.herokuapp.com/item/create/', postData)
+					axios.post('http://checklister-api.herokuapp.com/item/create/', postData)
 		        .then(function (response) {
 		          console.log(response.data);
 		        })
